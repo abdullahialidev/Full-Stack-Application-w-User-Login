@@ -6,7 +6,7 @@
 
 
 
-Created a full-stack personal job application tracker. Each user their own login, which they can use to save and edit their job applications.
+Created a full-stack personal job application tracker. Each user their own login, which they can use to save, edit, delete or even update their information about their job applications.
 
 This was created using HTML, CSS, Node.js, express.js as a template handler, and by using MongoDB as a database.
 
