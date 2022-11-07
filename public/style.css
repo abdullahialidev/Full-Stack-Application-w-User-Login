@@ -1,0 +1,24 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-size: contain;
+}
+
+.jobDisplay{
+  margin-top: 3rem;
+
+}
+
+.card {
+  border: 1px solid grey;
+  float: left;
+  margin: 2rem auto;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  width: 30%;
+}
+
+section {
+  margin-top: -4%;
+}
+

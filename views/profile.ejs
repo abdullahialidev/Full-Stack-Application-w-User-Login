@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <title>Personal Job Application Tracker</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Job Application Personal Tracker</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <form action="/applications" method="post">
+            <div class="form-group">
+                <label>Job Title</label>
+                <input type="text" class="form-control" name="jobTitle">
+            </div>
+            <div class="form-group">
+                <label>Starting Salary</label>
+                <input type="text" class="form-control" name="salary">
+            </div>
+            <div class="form-group">
+                <label>Years of Experience Required</label>
+                <input type="text" class="form-control" name="yoe">
+            </div>
+            <div class="form-group">
+                <label>Contact</label>
+                <input type="text" class="form-control" name="contact">
+            </div>
+            <div class="form-group">
+                <label>Hiring Manager</label>
+                <input type="text" class="form-control" name="hiringManager">
+            </div>
+            <div class="form-group">
+                <label>Hiring Manager Email</label>
+                <input type="text" class="form-control" name="hiringManagerEmail">
+            </div>
+            <div class="form-group">
+                <label>Did Company Contact Me</label>
+                <input type="text" class="form-control" name="didContactMe">
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" name="location">
+            </div>
+
+    
+            <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+        </form>
+
+        <!-- LOCAL INFORMATION
+        <div class="col-sm-6">
+          <table class="table table-bordered table-responsive-md table-striped text-center">
+            <h1>Let us help get you hired today!</h1>
+            </div>
+        </div> -->
+
+
+        <section class="jobDisplay">
+            <div class="container d-flex flex-row">
+        <% for(let i = 0; i < jobApplications.length; i++) {%>
+              <div class="card " >
+                <div class="card-body ">
+                  <p class="card-title">Job Title: <%= jobApplications[i].jobTitle %> </p>
+                  <p class="card-text">Job Salary: <%= jobApplications[i].jobSalary %> </p>
+                  <p class="card-text">Years of Experience: <%= jobApplications[i].jobTitle %> </p>
+                  <p class="card-text">Contact: <%= jobApplications[i].contanct%></p>
+                  <p class="card-text">Hiring Manager: <%= jobApplications[i].hiringManager%></p>
+                  <p class="card-text">Hiring Manager Email: <%= jobApplications[i].emailOfHiringManager %></p>
+                  <p class="card-text">Did Company Contact Me: <%= jobApplications[i].isContacted%></p>
+                  <p class="card-text">Location: <%= jobApplications[i].location %></p>
+                  <!-- <span><i class="bi bi-trash"></i></span>
+                  <span><i class="bi bi-check-circle"></i></span> -->
+                  <a href="/edit-profile/<%=jobApplications[i]._id %>"><button class="btn btn-success">Edit</button></a></td></tr> 
+                  <button onclick=deleteById("<%=jobApplications[i]._id %>") class="btn btn-danger">Delete</button></a></td></tr> 
+
+                </div>
+              </div>
+            </div>
+            <% } %>
+        </section>
+
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
