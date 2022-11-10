@@ -6,8 +6,23 @@
 
 
 
-Created a full-stack personal job application tracker. Each user their own login, which they can use to save, edit, delete or even update their information about their job applications.
+Created a full-stack personal job application tracker. Each user their own login, which they can use to save, edit, delete or even update their information about their job applications. This application has all the classic CRUD elements typically found in full-stack applications.
 
-This was created using HTML, CSS, Node.js, express.js as a template handler, and by using MongoDB as a database.
+Link to Zellwk's Crud Reading, which I used to learn how to use CRUD while building a full-stack application. https://zellwk.com/blog/crud-express-mongodb/
+
+This was created using HTML, CSS, Node.js. Express was utilized as a template handler with a MongoDB database.
+
+
+
+ ## Installation
+
+1. Clone repo
+2. run `npm install`
+
+
+
+ To start server, npm start
+ 
+ The server is connected to port 4500
 
 
